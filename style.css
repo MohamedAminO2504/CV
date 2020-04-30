@@ -1,0 +1,195 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body,html{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    color: #888888;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6a6a6a;
+  border: 0px none #ffffff;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 0px none #ffffff;
+  border-radius: 14px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+section#main_page{
+    height: 85%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: calc(15%/2);
+    background: white;
+}
+
+section#main_page > *{
+    display: inline-block;
+    overflow: overlay;
+
+}
+
+
+/********************* NAV *********************/
+nav{
+    background-color: #0098c6;
+    height: 100%;
+    width: 80px;
+}
+
+nav .icon{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+    color: white;
+}
+
+
+/********************* PHOTO *********************/
+
+section#my_photo{
+    background: url(img/momo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 108%;
+    width: 40%;
+    position: absolute;
+    top: -4%;
+    margin-left: -4px;
+    box-shadow: 0 32px 84px 0 rgba(0,0,0,0.5);
+
+}
+
+section#my_photo > div{
+    position: absolute;
+    bottom: 67px;
+    width: 100%;
+    text-align: center;
+}
+
+section#my_photo > div .name{
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+section#my_photo > div .job{
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #0098c6;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/********************* Content *********************/
+
+
+#content{
+    height: 100%;
+    width: calc(100% - 40% - 100px + 4px);
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+}
+#content .resume{
+    padding-bottom: 20px;
+}
+article{
+    padding: 30px 30px 0 30px;
+}
+
+#content h1{
+    font-size: 75px;
+}
+
+#content .sub_text{
+    color: #0098c6;
+    padding: 30px 0;
+    font-size: 18px;
+}
+/*
+article::after{
+    content: '';
+    right: 30px;
+    height: 2px;
+    background-color: black;
+    opacity: 0.09;
+    display: block;
+}*/
+
+/****** Skill **********/
+
+h2{
+    margin: 25px 0;
+
+}
+
+.skill {
+    width: 100%;
+    height: 50px;
+}
+
+.skill .skill-name{
+
+}
+
+.skill .skill-value{
+    float: right;
+
+}
+
+.skill .skill-line{
+    background-color: #eeeeee;
+    height: 5px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+
+.skill .skill-line .active-line{
+    background-color: #0098c6;
+    height: 5px;
+    width: 80%;
+
+}
