@@ -7,7 +7,11 @@ b{
     color : #0098c6;
 }
 
-#displayImage{
+a{
+    text-decoration: none;
+}
+
+#displayImageDiv{
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +23,7 @@ b{
     display: none;
 }
 
-#displayImage img{
+#displayImageDiv img{
     height: 70%;
     position: relative;
     top: 15%;
@@ -219,8 +223,14 @@ h2{
 
 /**************** Education ****************/
 .content_education > article{
-    margin : 20px 0 ;
+    padding-top : 25px ;
 }
+
+.content_education > article:hover{
+    background-color: #a0a0a00f;
+    cursor: pointer;
+}
+
 
 .content_education > article::after{
     content: '';
@@ -250,13 +260,15 @@ h2{
     text-align: right;
 }
 
-.content_education > article:nth-child(odd) > .logo_organisation{
+.content_education > article:nth-child(odd) .logo_organisation{
     text-align: right;
     float: left;
 }
 
 
 .content_education .description{
+    margin-top: 10px;
+
 }
 
 .content_education .organisation{
@@ -265,11 +277,11 @@ h2{
 /****************** EXP **********************/
 
 
-.content_exp p{
+#content_exp p{
     margin : 10px 0 ;
     text-align: center;
 }
-.content_exp p::after{
+#content_exp p::after{
     content: '';
     right: 30px;
     height: 2px;
@@ -278,25 +290,25 @@ h2{
     display: block;
     margin-top: 20px;
 }
-.content_exp ul{
+#content_exp ul{
     padding: 0 51px;
     list-style: none;
   
 }
 
 
-.content_exp li{
+#content_exp li{
     text-align: left;
     border-bottom: solid 1px #e9e9e9;
     margin-bottom: 10px;
     padding-bottom: 12px;
     color: #888888;
 }
-.content_exp li:last-child{
+#content_exp li:last-child{
     border-bottom: none;
 }
 
-.content_exp ul li::before{
+#content_exp ul li::before{
     content: "•";
     color: red;
     padding-left: 0px;
@@ -304,35 +316,40 @@ h2{
     left: -10px;
 }
 
-.content_exp .contexte{
+#content_exp .contexte{
     font-size: 17px;
     font-style: italic;
 }
 
-.content_exp img{
+#content_exp img{
     height: 50px;
     float: right;
 }
 
-.content_exp .techno{
+#content_exp .techno{
     
 }
-.content_exp h2 span
+#content_exp h2 span
 {
     display: block;
 }
-.content_exp h2 span.orange
+#content_exp h2 span.orange
 {
     display: inline-block;
     color: orangered;
 }
 
-.content_exp h2 span.organisation
+span.orange{
+    color: orangered;
+
+}
+
+#content_exp h2 span.organisation
 {
     font-size: 20px;
 }
 
-.content_exp h2 span.job{
+#content_exp h2 span.job{
     color:#0098c6 ;
 }
 
@@ -342,3 +359,25 @@ h3{
 }
 
 
+/************** Maquette *************************/
+#maquette > article{
+}
+#maquette .element{
+    width: 48%;
+    display: inline-block;
+    float: left;
+    padding: 1%;
+}
+
+#maquette .element p{
+    background-color: #252525b5;
+    position: relative;
+    bottom: 26px;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+#maquette .element img{
+    width: 100%;
+}
