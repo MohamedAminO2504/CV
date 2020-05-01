@@ -1,6 +1,18 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(lemon_milk/LEMONMILK-Light.otf);
+  }
+
 *{
     margin : 0;
     padding: 0;
+    transition: ease-in-out 0.1s;
+
+}
+
+h1, h2, h3, h4{
+    font-family: myFirstFont;
+
 }
 
 b{
@@ -9,6 +21,10 @@ b{
 
 a{
     text-decoration: none;
+}
+
+.drapeau > img{
+    width: 35%;
 }
 
 #displayImageDiv{
@@ -108,11 +124,19 @@ nav .icon{
     color: white;
 }
 
+nav .icon.active{
+    color: #81f944;
+}
+
+nav .icon:hover{
+    color: #81f944;
+}
+
 
 /********************* PHOTO *********************/
 
 section#my_photo{
-    background: url(img/momo3.jpg);
+    background: url(img/moi.jpg);
     background-size: cover;
     background-position: center;
     height: 108%;
@@ -128,7 +152,9 @@ section#my_photo > div{
     position: absolute;
     bottom: 67px;
     width: 100%;
+    background: #0000008c;
     text-align: center;
+    padding: 17px 0;
 }
 
 section#my_photo > div .name{
@@ -164,8 +190,79 @@ section#my_photo > div .job{
     padding: 30px 30px 0 30px;
 }
 
+
+
 #content h1{
-    font-size: 75px;
+    font-size: 30px;
+}
+
+#loisir h1{
+    margin-bottom: 50px;
+}
+
+#loisir h3{
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+}
+
+#loisir article{
+   
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    color: white;
+    margin: 50px 0;
+}
+
+#loisir article.jeuxvideo{
+    background: url(img/ff.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#loisir article.sakura{
+    background: url(img/sakura.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#loisir article.danse{
+    background: url(img/danse.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#loisir article.musique{
+    background: url(img/musique.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+#loisir ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+#loisir .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #404040d1;
+    position: absolute;
+    top: 0;
+
+}
+
+#loisir .loisircontent {
+    position: relative;
+    padding: 20px;
 }
 
 #content .sub_text{
@@ -185,10 +282,10 @@ article::after{
 
 /****** Skill **********/
 
-h2{
+h2, h1.avecmarge{
     margin: 25px 0;
-
 }
+
 
 .skill {
     width: 100%;
@@ -216,19 +313,54 @@ h2{
 .skill .skill-line .active-line{
     background-color: #0098c6;
     height: 5px;
-    width: 80%;
+    width: 100%;
 
 }
+.skill .skill-line .active-line.p10{
+    width: 10%;
+}
 
+.skill .skill-line .active-line.p20{
+    width: 20%;
+}
+
+.skill .skill-line .active-line.p30{
+    width: 30%;
+}
+
+.skill .skill-line .active-line.p40{
+    width: 40%;
+}
+
+.skill .skill-line .active-line.p50{
+    width: 50%;
+}
+
+.skill .skill-line .active-line.p60{
+    width: 60%;
+}
+
+.skill .skill-line .active-line.p70{
+    width: 70%;
+}
+
+.skill .skill-line .active-line.p80{
+    width: 80%;
+}
+
+.skill .skill-line .active-line.p90{
+    width: 90%;
+}
 
 /**************** Education ****************/
 .content_education > article{
     padding-top : 25px ;
 }
 
+
 .content_education > article:hover{
     background-color: #a0a0a021;
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -380,4 +512,88 @@ h3{
 
 #maquette .element img{
     width: 100%;
+}
+
+#maquette2 > article{
+}
+#maquette2 .element{
+    width: 100;
+    padding: 1%;
+    text-align: center;
+}
+
+#maquette2 .element p{
+    background-color: #252525b5;
+    position: relative;
+    bottom: 26px;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin : auto;
+    width: 50%;
+}
+
+#maquette2 .element img{
+    width: 50%;
+}
+
+
+#content_danse li{
+    list-style: none;
+    text-align: center;
+}
+
+
+#content_danse h3{
+    color: #0098c6;
+    margin-top: 30px;
+    border-top: 1px solid #58585833;
+    padding-top: 15px;
+}
+
+
+#content_danse h4{
+    margin-bottom: 10px;
+}
+
+
+
+ul.listGroupe > li{
+    margin-bottom: 30px;
+}
+
+ul.listGroupe > li > ul{
+    color: black;
+    width: 50%;
+    margin: auto;
+}
+
+#content_danse ul.listGroupe > li > ul > li{
+    text-align: left;
+    list-style: circle;
+}
+
+.foot{
+    padding-bottom: 100px;
+    display: block;
+}
+
+.readMore{
+    background-color: #0098c6;
+    margin: auto;
+    /* text-align: left; */
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.borderGray{
+    display: block;
+    height: 2px;
+    width: 60%;
+    margin: auto;
+    background-color: #6d6d6d54;
+    margin-top: 30px;
 }
