@@ -10,6 +10,10 @@
 
 }
 
+.maoLogo img{
+    width:100%;
+}
+
 h1, h2, h3, h4{
     font-family: myFirstFont;
 
@@ -109,27 +113,29 @@ section#main_page > *{
 
 /********************* NAV *********************/
 nav{
-    background-color: #0098c6;
-    height: 100%;
+    background-color: white;
+    height: 70%;
     width: 80px;
+    margin-top: 10%;
+    margin-bottom: auto;
 }
 
 nav .icon{
     width: 100%;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-size: 20px;
     text-align: center;
-    font-size: 30px;
-    padding: 20px 0px;
-    color: white;
+    font-size: 25px;
+    padding: 11px 0px;
+    color: black;
 }
 
 nav .icon.active{
-    color: #81f944;
+    color: #0098c6;
 }
 
 nav .icon:hover{
-    color: #81f944;
+    color: #0098c6;
 }
 
 
@@ -267,8 +273,9 @@ section#my_photo > div .job{
 
 #content .sub_text{
     color: #0098c6;
-    padding: 30px 0;
+    padding: 0 0 25px 0;
     font-size: 18px;
+    text-align: right;
 }
 /*
 article::after{
@@ -481,7 +488,7 @@ span.orange{
     font-size: 20px;
 }
 
-#content_exp h2 span.job{
+h2 span.job{
     color:#0098c6 ;
 }
 
@@ -596,4 +603,25 @@ ul.listGroupe > li > ul{
     margin: auto;
     background-color: #6d6d6d54;
     margin-top: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+    section#my_photo{
+        display: none;
+    }
+    #content{   
+        width: calc(100% - 80px);
+    }
+    section#main_page {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: 0 ;
+    }
+    
+    
 }
