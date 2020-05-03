@@ -586,7 +586,7 @@ ul.listGroupe > li > ul{
 
 
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 840px){
     section#my_photo{
         display: none;
     }
