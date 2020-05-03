@@ -1,3 +1,20 @@
+var themeExist = ["blue","dark","style2"];
+
+function setTheme(theme){
+  localStorage.setItem('theme', theme);
+  document.getElementById("pageStyle").setAttribute('href', theme+'.css');
+}
+
+function changeCSS(){
+  var theme =  localStorage.getItem('theme');
+  if(themeExist.includes(theme)){
+      document.getElementById("pageStyle").setAttribute('href', theme+'.css');
+  }
+
+}
+
+  changeCSS();
+
 window.addEventListener("load", function(event) {
     var exp = document.getElementById("maquette");
     var elmts = exp.getElementsByClassName("element");
@@ -6,6 +23,7 @@ window.addEventListener("load", function(event) {
         element.setAttribute("onclick","diplayImg(this);");
     }
   });
+
 
 
   function diplayImg(elmt){
@@ -20,3 +38,4 @@ window.addEventListener("load", function(event) {
     document.getElementById("displayImageDiv").style.display = "none";
 
   }
+

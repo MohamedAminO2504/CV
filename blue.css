@@ -1,0 +1,138 @@
+b{
+    color : #0098c6;
+}
+
+
+body,html{
+    background-color: #0a0000;
+}
+
+p{
+    color: #888888;
+}
+
+
+section#main_page{
+    background: white;
+}
+
+
+nav{
+    background-color: white;
+}
+
+nav .icon {
+    color: black;
+}
+
+nav .icon.active{
+    color: #0098c6;
+}
+
+nav .icon:hover{
+    color: #0098c6;
+}
+
+section#my_photo{
+    background-image: url(img/moi.jpg);
+
+}
+
+section#my_photo > div{
+    background: #0000008c;
+}
+
+section#my_photo > div .name{
+    color: white;
+}
+
+section#my_photo > div .job{
+    color: #0098c6;
+}
+
+#loisir article{
+    border: 1px solid black;
+    color: white;
+}
+
+#content .sub_text{
+    color: #0098c6;
+}
+
+.skill .skill-line{
+    background-color: #eeeeee;
+}
+
+
+.skill .skill-line .active-line{
+    background-color: #0098c6;
+}
+
+
+.content_education > article:hover{
+    background-color: #a0a0a021;
+}
+
+
+.content_education > article::after{
+    background-color: black;
+}
+
+.content_education .titre{
+    color : #0098c6;
+}
+
+
+#content_exp p::after{
+    background-color: black;
+}
+
+#content_exp li{
+    border-bottom: solid 1px #e9e9e9;
+    color: #888888;
+}
+
+#content_exp ul li::before{
+    content: "•";
+    color: red;
+}
+
+
+h2 span.job{
+    color:#0098c6 ;
+}
+
+
+#maquette .element p{
+    background-color: #252525b5;
+   
+    color: white;
+}
+
+
+#maquette2 .element p{
+    background-color: #252525b5;
+
+    color: white;
+}
+#content_danse h3{
+    color: #0098c6;
+    border-top: 1px solid #58585833;
+}
+
+
+ul.listGroupe > li > ul{
+    color: black;
+
+}
+
+
+.readMore{
+    background-color: #0098c6;
+   
+    color: white;
+}
+
+.borderGray{
+    background-color: #6d6d6d54;
+}
